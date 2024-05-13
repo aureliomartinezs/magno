@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto</title>
+    <link rel="stylesheet" href="proyecto/proyecto.css">
+</head>
+<body>
+
+    <header>
+        <img src="logo/FC-logo-horizontal.svg" alt="logo de la empresa" class="logo">
+           
+        <nav class="lista">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">HISTORIA</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav>
+
+         <!--  <img src="icons/bars-solid.svg" alt="pulsador" id="logo">
+
+        <nav class="nav">             
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">HISTORIA</a></li>
+                <li><a href="#">SERVICIOS</a></li>
+                <li><a href="#">CONTACTO</a></li>
+            </ul>
+        </nav> -->
+    </header>
+
+     <nav class="dos">
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li>CONTACTO</li>
+        </ul>
+     </nav>
+
+     <h1>CONTACTO</h1>
+     <h2>Solicita presupuesto</h2>
+     
+
+    <main>
+           <form method="post" action="mi-script-php">
+                <div  class="rellena">
+                   <p>
+                      <label for ="nom">Nombre</label>
+                      <input id="nom" type="text" name="nom" placeholder="Inserta tu nombre" tabindex="1">
+                   </p>
+                   <p>
+                       <label for="trab">Empresa</label>
+                       <input id="trab" type="text" name="trab" placeholder="Nombre tu empresa" tabindex="2">
+                   </p>
+                   <p>
+                       <label for="direc">Web</label>
+                       <input id="direc" type="url" name="direc" required  placeholder="Tu sitio web" tabindex="3">
+                   </p>
+                   <p>
+                       <label for="asistencia">Numero de asistentes aproximado(minimo 20 -maximo 200)</label>
+                       <input id="asistencia" type="text" name="asistencia" required tabindex="4">
+                   </p>
+                  
+                   <p>
+                       <label for="correo">Email</label>
+                       <input id="correo" type="email" name="correo" placeholder="Tu password" pattern="[A-Za-z0-9]{0,9}"  tabindex="5">
+                   </p>
+                   <p>
+                    <textarea tabindex="6">Mensaje</textarea >
+                  </p>
+    
+                  <p class="tip"> 
+                    <input id="chec" type="checkbox" name="chec" tabindex="7">
+                    <label for="chec">He leido y acepto la politica de privacidad</label>
+                  </p>
+                   <p>
+                      <button>CONTACTAR</button>
+                   </p>
+                </div>
+
+            </form>
+      
+    <main>
+<!--        
+          <div class="contact">         
+               <p>
+                <textarea tabindex="6">Mensaje</textarea >
+              </p>
+
+              <p class="tip"> 
+                <input id="chec" type="checkbox" name="chec" tabindex="7">
+                <label for="chec">He leido y acepto la politica de privacidad</label>
+              </p>
+               <p>
+                  <button class="con">CONTACTAR</button>
+               </p>
+          </div> -->
+     <section class="articulos">
+           <h3>Descubre nuestros menús</h3>
+
+           <div class="contenedor"> 
+               <article class="una">            
+                    <picture>
+                             <source srcset="img/empresas.jpg,
+                                             img/empresas@2x.jpg 2x,
+                                             img/empresas@3x.jpg 3x">
+                                   <img src="img/empresas@3x.jpg" alt="Menu de empresa">
+                    </picture>
+                             
+                      <div class="llama">
+                             <h4>Empresas</h4>
+                             <a href="#">Ver menú</a>
+                     </div>
+               </article> 
+                
+               <article class="doss">           
+                    <picture>
+                        <source srcset="img/celebraciones.jpg,
+                                        img/celebraciones@2x.jpg 2x,
+                                        img/celebraciones@3x.jpg 3x">
+                              <img src="img/celebraciones@3x.jpg" alt="Menu para celebraciones">
+                    </picture>
+      
+                     <div class="llama">
+                        <h4>Celebraciones</h4>
+                        <a href="#">Ver menú</a>
+                    </div>
+               </article> 
+
+               <article class="tres">    
+                   <picture>
+                       <source srcset="img/escuelas.jpg,
+                                       img/escuelas@2x.jpg 2x,
+                                       img/escuelas@3x.jpg 3x">
+                             <img src="img/escuelas@3x.jpg" alt="Menu para escuelas"> 
+                   </picture>
+
+                  <div class="llama">
+                      <h4>Escuelas</h4>
+                      <a href="#">Ver menú</a>
+                  </div>
+               </article>   
+           </div>
+     </section>
+     </main> 
+
+             <!-- <footer>
+                  <div class="junto">
+                      <address class="direcciones">
+                           <p> © 2020 - Fartera Catering.</p>
+                           <p> C/ Llacuna 162, 08018 Barcelona.</p>
+                           <p> Telf.: 93 542 65 65</p>
+                      </address>
+                 
+                       <div class="social">
+                          <a href="https://twitter.com/FarteraCatering"></a> <img src="icons/twitter.svg" alt="Ahora llamada x">
+                           <a href="https://facebook.com/FarteraCatering"></a> <img src="icons/facebook.svg" alt="Red de contactos">
+                           <a href="https://instagram.com/FarteraCatering"></a> <img src="icons/instagram.svg" alt="Interactuar">
+                       </div>
+                     </div>
+                       <div class="final">
+                             <p class="un">Aviso legal</p>
+                             <p class="do">Política de pivacidad.</p>
+                             <p class="tre">Politica de cookies</p>
+                       </div>
+              </footer> -->
+
+
+              <footer>
+                <div class="junto">
+
+                    <address> © 2020 - Fartera Catering.</address>
+                    <address> C/ Llacuna 162, 08018 Barcelona.</address>
+                    <p class="telefono"> Telf.: 93 542 65 65</p>
+
+                    <div class="social">
+                        <a href="https://twitter.com/FarteraCatering"></a> <img src="icons/twitter.svg" alt="Ahora llamada x">
+                         <a href="https://facebook.com/FarteraCatering"></a> <img src="icons/facebook.svg" alt="Red de contactos">
+                         <a href="https://instagram.com/FarteraCatering"></a> <img src="icons/instagram.svg" alt="Interactuar">
+                     </div>
+
+
+
+                     <p class="un">Aviso legal</p>
+                    <p class="do">Política de pivacidad.</p>
+                    <p class="tre">Politica de cookies</p>
+
+                </div>
+
+
+
+              </footer>
+    <script src="jss/menu.jss"></script>
+</body>
+</html>
