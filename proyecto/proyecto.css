@@ -1,0 +1,445 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body{
+background-color: antiquewhite;
+
+}
+
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light-webfont.eot");
+  src: url("../fonts/Roboto-Light-webfont.svg") format("svg"),
+       url("../fonts/Roboto-Light-webfont.ttf") format("trutype"),
+       url("../fonts/Roboto-Light-webfont.woff") format("woff"),
+       url("../fonts/Roboto-Medium-webfont.eot") format("embeded-open type"),
+       url("../fonts/Roboto-Medium-webfont.svg") format("svg"),
+       url("../fonts/Roboto-Medium-webfont.ttf") format("trutype"),
+       url("../fonts/Roboto-Medium-webfont.woff") format("woff");
+
+  
+ 
+}
+main{
+width:100%;
+margin: 0 auto;
+}
+header{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap:25rem
+}
+ #logo{
+  width: 20px;
+  height: 20px;
+}
+
+.logo{
+  width: 234px;
+  height: 130px;
+  margin-left: 2.2em;
+}
+
+.lista ul{
+  display: flex;
+  margin-right: 2.2em;
+  
+ 
+ }
+.lista li{
+  padding: 1em;
+  list-style-type: none;
+  
+ 
+ }
+.lista ul li a:link{
+  color:black;
+  font-family: "Roboto",Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+
+  text-decoration:none ;
+} 
+.lista ul li a:visited{
+  color: brown;
+}
+.lista ul li a:hover{
+  color: rgb(0, 255, 34);
+}
+
+
+.dos{ 
+  width: 80%;
+  display: flex ;
+  margin: 0 auto;
+}
+.dos ul{
+  display: flex;
+}
+.dos li{
+  list-style-type: none;
+  font-size: 18px;
+  padding: 1rem 0.5rem;
+}
+.dos a::after{
+  content: ">";
+ 
+}
+ 
+h1{
+  /*width: 96vw;*/
+  width: 100%;
+  margin-bottom: 33px;
+  margin-top: 33px;
+ /* margin-left: 16rem;*/
+  text-align: center;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+ 
+}
+h2{
+/*  width: 60vw;
+  margin-left: 16rem;*/
+  width: 100%;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 33pxs;
+}
+.rellena{      /*Aqui se inicia el formulario*/
+   width: 100%; 
+  /*! margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  
+}
+label{
+  display: flex;
+  
+}
+input[type="text"], input[type="url"], input[type="email"], textarea{
+  width: 32rem;
+  height: 2.25rem;
+  background-color: rgb(228, 213, 213);
+  margin-bottom: 28px;
+}
+.contact{
+ width: 60vw;
+ margin-left: 8.5rem;
+ display: flex;
+ flex-direction: column;
+}
+
+
+textarea{
+  display: flex;
+  border: 1px solid black;
+  width: 31.5rem;
+  height: 20vh;
+  /*! margin-left: 9.5rem; */
+}
+
+.text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.tip{
+
+  display: flex;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  /*! margin-left: 14rem; */
+
+}
+.tip label{
+  padding-left: 10px;
+}
+button{
+  display: flex;
+ 
+   /*! margin-left: 20rem; */
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background-color: #069697;
+  color: #fff;
+  margin-bottom: 3.5rem;/*aqui deja el espacio hasta el h1*/
+}
+.articulos{
+width: 80%;
+margin: 0 auto;
+margin-top: 3.5rem;/*Aqui el h1 se separa*/
+
+
+}
+.contenedor{
+margin-top: 7rem;/*Aqui van las tres imagenes*/
+display: flex;
+gap: 7rem;
+
+}
+
+h3{
+  text-align: center;
+  font-size: 48px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.una img{
+  mask-image:url("../logo/Ellipse\ 2.svg");
+  mask-repeat: no-repeat;
+  object-fit: cover;
+}
+.doss img{ /*Se ha añadido una s porque ya hay una clsa llamada dos, para evitar herencia*/
+  mask-image:url("../logo/Ellipse\ 2.svg");
+  mask-repeat: no-repeat;
+  object-fit: cover;
+ 
+}
+.tres img{
+  mask-image:url("../logo/Ellipse\ 2.svg");
+  mask-repeat: no-repeat;
+  object-fit: cover;
+}
+.llama{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.4rem;
+  margin-bottom: 1.4rem;
+ 
+}
+.llama p{
+ font-size: 2.1rem;
+
+}
+.llama a{
+  margin-top: 1.5rem;
+  text-decoration: none;
+  display: flex;
+  background-color: #069697;
+  color:#fff;
+  font-size: 0.9;
+  padding: 10px 21px;
+  gap:10px
+  
+}
+
+
+footer{
+  width: 100%;
+  background: #000;
+  height: 205px;
+  padding: 46px 0;
+}
+.junto{
+/*display:flex; /*Aqui direcciones y iconos*/
+/*justify-content: center;*/
+display: grid;
+grid-template-columns: 20% 30% 20% 30%;
+color: white;
+}
+
+address{
+/*display: flex;/*Aqui les direcciones de footer*/
+color: #fff;
+/*gap:3.2rem;*/
+/*margin: 0 3.2rem;*/
+text-align: center;
+}
+.telefono{
+text-align: center;
+}
+
+
+.social{
+display: flex; /*los iconos*/
+gap: 2rem;  /*Aqui distancia entre iconos*/
+}
+
+.final{
+ width: 80%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap:50px
+ 
+  
+
+}
+.un{
+  /*width:15%;
+  height: 30px;*/
+  
+  text-align: center;
+}
+.do{
+  /*width: 25%;
+  height:30px ;*/
+  text-align: center;
+  
+}
+.tre{
+  /*width: 20%;
+  height: 30px;*/
+  text-align: center;
+}
+
+
+
+
+
+
+@media screen and (min-width:320px) and (max-width:720px) {
+  body{
+    background-color: aqua;
+  
+  }
+  header{
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  
+  ul{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  ul li{
+    margin-right: 3rem;
+  }
+  .dos{
+    display: block;
+   margin-left: 6rem;
+  }
+  form{
+    width:160%
+  }
+  .rellena{
+    width: 100%;
+  } 
+   h1{
+    text-align: center;
+   }
+  .rellena input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*! margin-left: 13rem; */
+   }
+   .rellena label{
+    display: flex;
+    flex-direction: column;
+    /*! margin-left: 13rem; */
+   
+   }
+   textarea{
+    width: 32rem;
+   }
+
+   .contact{
+     display: flex;
+     flex-direction: column;
+     align-items: end;
+      } 
+      
+   .tip{
+    width: 100%;
+    display: flex;
+    flex-direction: row;/*Este por casualidad el imput y label a la vez*/
+    }
+  
+  
+  .articulos h3{
+    margin-right: 45rem;
+  }
+  .contenedor{
+    display: flex;;
+    flex-direction: column;
+    align-items: center;
+  }
+.llama{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+footer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+ 
+}
+.junto{
+  /*margin-top: 25px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;*/
+  display: grid;
+  grid-template-columns: 300px;
+  margin: auto;
+  border: 1px solid red;
+
+  
+}
+/* .direcciones{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+} */
+.social{
+     margin-top: 25px;
+     margin-bottom: 50px;
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     gap:1rem;
+
+}
+
+.telefono{
+  margin-bottom: 10px;
+}
+/* .final{
+  width: 100%;
+  gap:15px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  
+} */
+address{
+  margin-bottom: 10px;
+
+}
+
+.un,.do,.tre{
+  margin-bottom: 10px;
+}
+}
+
+
+
